@@ -1,0 +1,43 @@
+var username = prompt("Quien eres?")
+            var matar = [
+                'Daniel',
+                'David',
+                'Perez',
+                'Mario',
+            ];
+            var casar = [
+                'Abraham',
+                'la novia de Perez',
+                'Dani Latin',
+                'Juan',
+            ];
+            var follar = [
+                'Maria',
+                'Davida',
+                'Hitler',
+                'Stalin',
+            ];
+            var randomNumber = Math.floor(Math.random()*follar.length);
+
+            var matarname = matar[randomNumber];
+            var casarname = casar[randomNumber];
+            var follarname = follar[randomNumber];
+
+            if (username==="Perez") {
+                document.write("<h1>Casar,Matar,Follar</h1>");
+                document.write("<p>Te vas a casar con <strong>" + casarname + "</strong>, matar a <strong>" + matarname + "</strong> y follar con <strong>" + follarname + "</strong>!</p>")
+            }
+            else if(username==="David") {
+                document.write("<h1>Casar,Matar,Follar</h1>");
+                document.write("<p>Te vas a casar con <strong>" + casarname + "</strong>, matar a <strong>" + matarname + "</strong> y follar con <strong>" + follarname + "</strong>!</p>")
+
+            }
+            else if(username==="Mario") {
+                document.write("<h1>Casar,Matar,Follar</h1>");
+                document.write("<p>Te vas a casar con <strong>" + casarname + "</strong>, matar a <strong>" + matarname + "</strong> y follar con <strong>" + follarname + "</strong>!</p>")
+            }
+            else {
+                document.write("<h1>Acceso Denegado</h1>");
+                alert("No figuras en la lista");
+
+            }
